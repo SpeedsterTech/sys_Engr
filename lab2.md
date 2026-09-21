@@ -1,7 +1,4 @@
 # Lab 2 - Disk and Network Throughput 
-This lab is designed to reinforce the importance of the memory hierarchy and the tools and techniques used to measure the performance of it. It also contains an exploration of the trip cost vs. item cost conundrum. 
-
-Begin by figuring-out the commands you need to complete the chart below, then run the commands, collect the data, do the math, and complete the chart. Use a 1 GB file of random data for each of your tests. Always run a command at least 3 times and then average the results to obtain a given measurement. Calculate the data rate by determining how much was moved in each operation, what the average time per operation was, and then do the division. Beware of excess precision. The two rows I completed contain accurate data, you can test your work by comparing your values with the chart for those two. Notice that my command just copies the same file over itself rather than making lots of files.
 
 | Source (read)        	| Destination (write)  	| Path          	| Command                                                       	| Data rate  	|
 |----------------------	|----------------------	|---------------	|---------------------------------------------------------------	|------------	|
