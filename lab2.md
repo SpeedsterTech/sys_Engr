@@ -4,9 +4,8 @@
 |----------------------	|----------------------	|---------------	|---------------------------------------------------------------	|------------	|
 | local disk on bowie  	| local disk on bowie  	| internal bus  	| `for x in {1..4}; do time cp 1GB.dat 1GB.dat.copy; done` 	| 293 MB/sec 	|
 | local disk on bowie  	| `/dev/null` on bowie   	| internal bus  	| `for x in {1..4}; do time cp 1GB.dat /dev/null ; done`   	| 3.4 GB/sec 	|
-| local disk on hopper 	| local disk on hopper 	| internal bus  	|                     `for x in {1..4}; do time cp 1GB.dat 1GB.dat.copy; done`|      285 MB/sec    	|
-| local disk on hopper 	| `/dev/null` on hopper  	| internal bus  	|                       `for x in {1..4}; do time cp 1GB.dat /dev/null ; done` | 2.57 GB/sec |
-| local disk on bowie  	| local disk on hopper 	| 1Gb network   	|         `for c in {1..4}; do time scp 1GB.dat jdfayne25@hopper.cluster.earlham.edu; done`                                                     	|           0.358 GB/Sec	|
+| local disk on hopper 	| local disk on hopper 	| internal bus  	|                     |         	|
+| local disk on hopper 	| `/dev/null` on hopper  	| internal bus  	|                        | |                                                     	|          	|
 | local disk on bowie  	| local disk on hopper 	| 10Gb network  	|   `for c in {1..4}; do time scp 1GB.dat jdfayne25@10.10.10.1; done`                                                            	|     0.312 gb/sec      	|
 | local disk on hopper 	| `/dev/null` on bowie   	| 1Gb network   	|                                                               	|            	|
 | local disk on hopper 	| `/dev/null` on bowie   	| 10Gb network  	|                                                               	|            	|
